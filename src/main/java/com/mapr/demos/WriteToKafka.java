@@ -31,7 +31,7 @@ public class WriteToKafka {
     StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
     Properties properties = new Properties();
-    // properties.setProperty("bootstrap.servers", "<kafka-broker>:9092"); // not used by MapR Streams
+    properties.setProperty("bootstrap.servers", "http://not-used-by-mapr:9092"); // not used by MapR Streams
     properties.setProperty("streams.buffer.max.time.ms", "200");
 
     DataStream<String> stream = env.addSource(new SimpleStringGenerator());

@@ -29,7 +29,7 @@ $ mvn exec:java -Dexec.mainClass=com.mapr.demos.ReadFromKafka
 and Producer: 
 
 ```
-mvn exec:java -Dexec.mainClass=com.mapr.demos.WriteToKafka
+$ mvn exec:java -Dexec.mainClass=com.mapr.demos.WriteToKafka
 ```
 
 You should see messages printed in the Consumer console.
